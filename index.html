@@ -27,10 +27,11 @@ hr { width: 30%; }
         <hr>
         <a href="http://www.jeffpickell.com" alt="Jeff Pickell">@</a>
         
-        {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
-
+       <ul>Recent Repos
+        <li><a href="https://github.com/jpickell/dotfiles">My dotfiles</a></li>
+        <li><a href="https://github.com/jpickell/git-switch">git-switch</a></li>
+        <li><a href="https://github.com/jpickell/pfrestore">pfrestore</a></li>
+       </ul>
 </div>
 </body>
 </html>
