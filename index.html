@@ -26,6 +26,11 @@ hr { width: 30%; }
         Jeff Pickell
         <hr>
         <a href="http://www.jeffpickell.com" alt="Jeff Pickell">@</a>
+        
+        {% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
+
 </div>
 </body>
 </html>
